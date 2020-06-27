@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Settings">
+
+        <SwitchPreference
+            android:title="Sound"
+            android:summary="Enable sound"
+            android:defaultValue="true"
+            android:key="preference_enable_sound"/>
+        <SwitchPreference
+            android:title="Vibrations"
+            android:summary="Enable Vibrations"
+            android:defaultValue="true"
+            android:key="preference_enable_vibrations"/>
+        <ListPreference
+            android:title="Food Type"
+            android:summary="Pick Food Type"
+            android:key="preference_snake_food"
+            android:entries="@array/snake_foods"
+            android:entryValues="@array/snake_foods_assets"/>
+        <ListPreference
+            android:title="Snake Design"
+            android:summary="Change Snake Design"
+            android:key="preference_snake_design"
+            android:entries="@array/snake_designs"
+            android:entryValues="@array/snake_designs_assets"/>
+        <ListPreference
+            android:title="Game Speed"
+            android:summary="Change Game Speed"
+            android:key="preference_game_speed"
+            android:entries="@array/game_speeds"
+            android:entryValues="@array/game_speeds_values"/>
+    </PreferenceCategory>
+</PreferenceScreen>
